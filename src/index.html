@@ -58,31 +58,31 @@
       </div>
   </nav>
   <!--Hero section -->
-  <section id="hero" class="mb-64">
+  <section id="hero" class="mb-80">
     <!-- Container for image -->
     <div
-      class="container mx-auto px-6 flex flex-col items-center space-y-10 md:flex-row md:space-y-0 md:space-x-10 lg:space-x-20">
+      class="container mx-auto px-6 flex flex-col-reverse items-center space-y-10 md:flex-row md:space-y-0 md:space-x-10 lg:space-x-20">
+      
+      <!--content -->
+      <div class="flex flex-col space-y-6 md:w-1/2">
+        <h1
+          class="font-display text-xl text-violet dark:text-orchid font-bold text-center md:text-left md:text-lg lg:text-xl xl:text-2xl">
+          Hi, I'm Hibaq 👋</h1>
+        <h2
+          class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
+          I'm a FullStack Developer based in Canada</h2>
+        <!-- button container -->
+        <div class=" md:self-start self-center">
+          <a href="#about"
+            class="px-6 py-3 md:px-3 font-display lg:px-4 md:text-sm lg:text-lg dark:text-snow dark:hover:text-veryDarkBlue border rounded-lg shadow-md cursor-pointer hover:border-violet duration-200 dark:hover:bg-orchid">
+            More About Me</a>
+        </div>
+      </div>
       <!--image-->
       <div class="flex justify-center items-center md:w-1/2">
         <div class="w-64 h-64 lg:w-96 lg:h-96 rounded-full border overflow-hidden hover:scale-110 duration-200">
           <!-- <img id="hero-img" src="./Ellipse 1.jpg"> -->
         </div>
-      </div>
-      <!--content -->
-      <div class="flex flex-col space-y-6 md:w-1/2">
-        <h1
-          class="font-display text-xl text-violet dark:text-orchid font-bold text-center md:text-left md:text-lg lg:text-xl xl:text-2xl">
-          Hi, my name is</h1>
-          <h2
-          class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
-          Hibaq Warsame</h2>
-          <h2
-          class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
-          I'm a FullStack Developer based in Canada</h2>
-            <!-- button container -->
-      <div class=" md:self-start self-center">
-          <a href="#about" class="px-6 py-3 md:px-3 font-display lg:px-4 md:text-sm lg:text-lg dark:text-snow dark:hover:text-veryDarkBlue border rounded-lg shadow-md cursor-pointer hover:border-violet duration-200 dark:hover:bg-orchid"> More About Me</a>
-      </div>
       </div>
     </div>
   </section>
@@ -90,12 +90,12 @@
   <section id="about" class="mb-5">
     <!-- header -->
     <div class="container mx-auto px-6 flex space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20">
-      <div class="flex items-center md:w-1/2"> 
+      <div class="flex items-center md:w-1/2">
         <div class=" flex flex-col">
           <div>
-          <h2
-          class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
-          About me</h2>
+            <h2
+              class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
+              About me 🔮</h2>
           </div>
           <div class="mx-auto md:w-52 md:mx-0 border-b border-b-violet dark:border-b-orchid my-3"></div>
         </div>
@@ -104,12 +104,29 @@
   </section>
   <section id="about-content" class="mb-32">
     <div class="container mx-auto px-6 flex items-center space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20">
-    <div class="font-display text-lg text-plum dark:text-snow text-center">
-      <p class="text-justify">
-        I'm a web developer with a background in political science and a minor in computer science, recently graduated from Lighthouse Labs. My interdisciplinary background allows me to approach web development with a unique perspective, emphasizing user-centered design and creating platforms that empower individuals and communities. I'm proficient in HTML, CSS, JavaScript, React, Node.js, Git, and continuously expanding my skill set to incorporate new technologies and methodologies. Let's collaborate and create innovative solutions that make a positive impact.
-     </p>
-    </div>
-  </div>
+      <div class="font-display text-lg text-plum dark:text-snow text-center">
+        <p class="text-justify">
+          I'm a web developer with a background in political science and a minor in computer science, recently graduated
+          from Lighthouse Labs. My interdisciplinary background allows me to approach web development with a unique
+          perspective, emphasizing user-centered design and creating platforms that empower individuals and communities.
+          I'm proficient in HTML, CSS, JavaScript, React, Node.js, Git, and continuously expanding my skill set to
+          incorporate new technologies and methodologies. Let's collaborate and create innovative solutions that make a
+          positive impact.
+        </p>
+        <p class="text-justify mt-5">
+          Here's a list of technologies I recently worked with:
+        </p>
+        <div class="flex justify-start">
+          <ul class="grid grid-cols-2 gap-x-16 gap-y-10 mt-20 overflow-hidden text-left">
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">JavaScript</li>
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">React</li>
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">TypeScript</li>
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">HTML</li>
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">CSS</li>
+            <li class="before:content-['▹'] before:relative before:dark:text-orchid before:text-violet">Node.js</li>
+          </ul>
+        </div>
+      </div>
   </section>
 
   <script src="../js/app.js"></script>
