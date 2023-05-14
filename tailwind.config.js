@@ -13,10 +13,19 @@ module.exports = {
       "violet-dark": "#2f195f",
       "plum": "#0f1020",
       "purple-light": "#efc3f5",
-      "purple-gray":"#4E3A5F"
+      "purple-gray":"#4E3A5F",
+      "creamy-beige":"#E3DBD8",
+      "gray-beige":"#D6CBCB",
+      "plum-gray":"#494A71",
+      "indigo-gray":"#1E1F36"
 
     },
-    extend: {},
+    extend: {
+      padding: {
+        '1/2': '50%',
+        full: '100%',
+      }
+    },
   },
   plugins: [],
 }
