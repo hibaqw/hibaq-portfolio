@@ -47,7 +47,7 @@
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orchid"></span>
         </a>
       </div>
-      <div class="flex items-center space-x-6 text-4xl">
+      <div class="flex items-center space-x-6 text-3xl">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
           class="w-7 h-7 fill-snow stroke-snow relative" stroke-width="1.5" stroke="currentColor" id="theme-toggle-light-icon">
           <path
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div id="overlay" class="bg-gray-beige dark:bg-plum-gray flex justify-center items-center text-center flex-col">
-        <div class=" text-plum dark:text-snow cursor-pointer mb-0.5 flex  absolute top-8 right-8 text-4xl"> 
+        <div class=" text-plum dark:text-snow cursor-pointer mb-0.5 flex  absolute top-8 right-8 text-3xl"> 
           <ion-icon name="close" onclick="Menu(this)"></ion-icon>
         </div>
         <div id="overlay-menu">
@@ -78,13 +78,11 @@
   </nav>
   <!--Hero section -->
   <section id="hero" class="mb-32">
-    <!-- Container for image -->
-    
     <div
       class="container mx-auto px-6 flex flex-col-reverse items-center space-y-10 md:flex-row md:space-y-0 md:space-x-10 lg:space-x-20">
 
       <!--content -->
-      <div class="flex flex-col space-y-6 md:w-1/2">
+      <div class="flex flex-col space-y-6 md:w-1/2 mt-5">
         <h1
           class="font-display text-xl text-violet dark:text-orchid font-bold text-center md:text-left md:text-lg lg:text-xl xl:text-2xl">
           Hi, I'm Hibaq 👋</h1>
@@ -107,7 +105,7 @@
     </div>
   </section>
   <!-- about section -->
-  <section id="about" class="mb-32 flex justify-center h-full">
+  <section id="about" class="mb-32 flex justify-center min-h-full">
     <div
       class="container mx-auto px-6 flex justify-center items-center space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20">
       <div class="text-lg text-plum dark:text-snow text-center flex flex-col">
@@ -118,18 +116,20 @@
           <div class="mx-auto md:w-52 md:mx-0 border-b border-b-violet dark:border-b-orchid my-3"></div>
         </div>
         <p class="text-justify leading-loose">
-          I'm a web developer with a background in political science and a minor in computer science, recently graduated
-          from Lighthouse Labs. My interdisciplinary background allows me to approach web development with a unique
-          perspective, emphasizing user-centered design and creating platforms that empower individuals and communities.
-          I'm proficient in HTML, CSS, JavaScript, React, Node.js, Git, and continuously expanding my skill set to
-          incorporate new technologies and methodologies. Let's collaborate and create innovative solutions that make a
-          positive impact.
+          
+          Hi again, I'm a web developer with a background in Political Science and a minor in Computer Science, recently graduated
+          from Lighthouse Labs. Barring the second half of that sentence, its quite the unconventional combination, but I attribute my undergradute experience to helping me gain a fresh perspective for web development, emphasizing user-centered design and creating platforms that empower individuals and communities. 
+
+          When I'm not coding, I can be found reading (fantasy 🧙‍♀️ is the BEST) or drawing in my sketchbook. Feel free to reach out and give book reccomendations, I'm not a picky reader 😂.
+
+
+          
         </p>
       </div>
   </section>
   <!--skills section -->
-  <section id="--skills" class="mb-32 flex justify-center h-full">
-    <div class="container mx-auto px-6 flex space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20 h-full flex-col">
+  <section id="skills" class="mb-32 flex justify-center min-h-full">
+    <div class="container mx-auto px-6 flex space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20 h-full flex-col relative">
       <div class="font-display text-lg text-plum dark:text-snow text-center flex flex-col mb-5">
         <h2
           class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
@@ -239,9 +239,10 @@
 
   </section>
   <!-- project section -->
-  <section id="project" class=" flex justify-center text-plum dark:text-plum-gray mt-16 px-6 h-full mb-32">
+
+  <section id="project" class=" flex justify-center text-plum dark:text-plum-gray mb-32 min-h-full">
     <div
-      class="container mx-auto px-6 flex flex-col space-y-10 md:space-y-0 justify-center md:space-x-10 lg:space-x-20 items-center ">
+      class="container mx-auto px-6 flex flex-col space-y-10 md:space-y-0 justify-center md:space-x-10 lg:space-x-20 items-center">
       <h2
         class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl">
         Some Things I've Worked On 👩🏾‍💻</h2>
@@ -313,20 +314,21 @@
     </div>
   </section>
   <!-- contacts section -->
-  <section id="contact" class="bg-creamy-beige dark:bg-indigo-gray h-full flex items-center text-plum dark:text-snow">
+  <section id="contact" class="bg-creamy-beige dark:bg-indigo-gray text-plum dark:text-snow flex items-center h-full">
     <!-- header -->
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col items-center">
-        <h2 class="font-display text-xl font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl mb-5">
+    <div class="container mx-auto flex flex-col items-center">
+  
+        <h2 class="font-display text-lg font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl mb-5">
           Let's Connect 🙇🏾‍♀️</h2>
-        <p class="text-center w-1/2 leading-loose">
-          Hello and welcome! I'm excited to connect with you.
+        <p class="text-center w-1/2 leading-loose text-xs md:text-sm">
+          Thank you for reaching this far! I hope you found your stay here well!
           If you have any questions, suggestions, or would like to discuss web development, please feel free to reach
           out.
           I look forward to hearing from you and exploring potential collaborations. Let's create something amazing
           together!
         </p>
-        <div class=" mt-10 text-3xl flex">
+
+        <div class=" mt-10 text-xl md:text-2xl lg:text-3xl flex">
           <div class="mx-5">
             <a href="https://www.linkedin.com/in/hibaq-warsame/">
               <i class=" hover:text-violet hover:dark:text-orchid fa-brands fa-linkedin"></i>
@@ -338,7 +340,6 @@
             </a>
           </div>
         </div>
-      </div>
     </div>
   </section>
   <footer
