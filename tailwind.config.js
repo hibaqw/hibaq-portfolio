@@ -5,6 +5,7 @@ module.exports = {
   theme: {
      fontFamily: {
       display: ["Calistoga", "cursive"],
+      poppins: ["Poppins", "cursive"]
     },
     colors: {
       "snow": "#fbf5f3",
@@ -17,7 +18,8 @@ module.exports = {
       "creamy-beige":"#E3DBD8",
       "gray-beige":"#D6CBCB",
       "plum-gray":"#494A71",
-      "indigo-gray":"#1E1F36"
+      "indigo-gray":"#1E1F36",
+      "violet-gray": "#70729F"
 
     },
     extend: {

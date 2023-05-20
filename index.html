@@ -12,13 +12,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <!-- devicons link-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Document</title>
+
+  <title>Hibaq Dev Portfolio</title>
 </head>
 
 <body class="bg-snow dark:bg-plum">
@@ -43,38 +46,51 @@
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orchid"></span>
         </a>
         <!-- menu item #4 -->
-        <a href="#resume" class="group hover:text-violet transition duration-300">Resume
+        <a href="https://resume.creddle.io/resume/9kf685d60p2" class="group hover:text-violet transition duration-300">Resume
+
           <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-orchid"></span>
         </a>
       </div>
       <div class="flex items-center space-x-6 text-3xl">
+        <!--Sun Icon/ Dark Mode-->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          class="w-7 h-7 fill-snow stroke-snow relative" stroke-width="1.5" stroke="currentColor" id="theme-toggle-light-icon">
+          class="md:w-7 md:h-7 w-6 h-6 fill-snow stroke-snow relative" stroke-width="1.5" stroke="currentColor"
+          id="theme-toggle-light-icon">
           <path
             d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
         </svg>
+        <!--Moon Icon/ Light Mode-->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-7 h-7 fill-plum relative" id="theme-toggle-dark-icon">
+          class="md:w-7 md:h-7 w-6 h-6 fill-plum relative" id="theme-toggle-dark-icon">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
         </svg>
-        <div class=" text-plum dark:text-snow cursor-pointer lg:hidden mb-0.5 flex"> 
-        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        <!--Hamburger Menu -->
+        <div class=" text-plum dark:text-snow cursor-pointer lg:hidden mb-0.5 flex">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
         </div>
       </div>
+      <!--Full Screen Navigation Menu-->
       <div id="overlay" class="bg-gray-beige dark:bg-plum-gray flex justify-center items-center text-center flex-col">
-        <div class=" text-plum dark:text-snow cursor-pointer mb-0.5 flex  absolute top-8 right-8 text-3xl"> 
+        <div class=" text-plum dark:text-snow cursor-pointer mb-0.5 flex  absolute top-8 right-8 text-3xl">
+          <!-- Close Menu Overlay Icon -->
           <ion-icon name="close" onclick="Menu(this)"></ion-icon>
         </div>
         <div id="overlay-menu">
           <ul class="text-6xl">
-            <li><a href="#about" class="text-4xl m-auto text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display" onclick="redirectToSection()"><span>About</span></a></li>
-            <li><a href="#project" class="text-4xl m-auto  text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display" onclick="redirectToSection()"  > <span>Projects</span> </a></li>
-          <li><a href="#contact"class="text-center text-4xl m-auto  text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display" onclick="redirectToSection()"> <span>Contact</span></a></li>
+            <li><a href="#about"
+                class="text-4xl m-auto text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display"
+                onclick="redirectToSection()"><span>About</span></a></li>
+            <li><a href="#project"
+                class="text-4xl m-auto  text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display"
+                onclick="redirectToSection()"> <span>Projects</span> </a></li>
+            <li><a href="#contact"
+                class="text-center text-4xl m-auto  text-plum dark:text-snow hover:text-violet hover:dark:text-orchid font-display"
+                onclick="redirectToSection()"> <span>Contact</span></a></li>
           </ul>
         </div>
       </div>
- 
+
   </nav>
   <!--Hero section -->
   <section id="hero" class="mb-32">
@@ -98,8 +114,10 @@
       </div>
       <!--image-->
       <div class="flex justify-center items-center md:w-1/2">
-        <div class="w-64 h-64 lg:w-96 lg:h-96 rounded-full border overflow-hidden hover:scale-110 duration-200">
-          <img id="hero-img" src="./src/20230503_195703.jpg">
+        <div
+          class="w-64 h-64 lg:w-96 lg:h-96 rounded-full border-4 border-plum dark:border-snow border-dotted overflow-hidden hover:scale-110 duration-200">
+          <img id="hero-img-light" class="block dark:hidden" src="./src/hero-img-light.jpg">
+          <img class="hidden dark:block" src="./src/hero-img-dark.jpg">
         </div>
       </div>
     </div>
@@ -115,28 +133,33 @@
             About me 🔮</h2>
           <div class="mx-auto md:w-52 md:mx-0 border-b border-b-violet dark:border-b-orchid my-3"></div>
         </div>
-        <p class="text-justify leading-loose">
-          
-          Hi again, I'm a web developer with a background in Political Science and a minor in Computer Science, recently graduated
-          from Lighthouse Labs. Barring the second half of that sentence, its quite the unconventional combination, but I attribute my undergradute experience to helping me gain a fresh perspective for web development, emphasizing user-centered design and creating platforms that empower individuals and communities. 
+        <p class="font-poppins text-justify leading-loose">
 
-          When I'm not coding, I can be found reading (fantasy 🧙‍♀️ is the BEST) or drawing in my sketchbook. Feel free to reach out and give book reccomendations, I'm not a picky reader 😂.
+          Hi again, I'm a web developer with a background in Political Science and a minor in Computer Science, recently
+          graduated
+          from Lighthouse Labs. Barring the second half of that sentence, its quite the unconventional combination, but
+          I attribute my undergradute experience to helping me gain a fresh perspective for web development, emphasizing
+          user-centered design and creating platforms that empower individuals and communities.
+
+          When I'm not coding, I can be found reading (fantasy 🧙‍♀️ is the BEST) or drawing in my sketchbook. Feel free
+          to reach out and give book reccomendations, I'm not a picky reader 😂.
 
 
-          
+
         </p>
       </div>
   </section>
   <!--skills section -->
   <section id="skills" class="mb-32 flex justify-center min-h-full">
-    <div class="container mx-auto px-6 flex space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20 h-full flex-col relative">
+    <div
+      class="container mx-auto px-6 flex space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20 h-full flex-col relative">
       <div class="font-display text-lg text-plum dark:text-snow text-center flex flex-col mb-5">
         <h2
           class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl">
           My Toolbox 🛠️</h2>
         <div class="mx-auto md:w-52 md:mx-0 border-b border-b-violet dark:border-b-orchid my-3"></div>
       </div>
-      <ul class="grid md:grid-cols-6 grid-cols-5 text-2xl w-full h-full text-plum-gray gap-x-4 gap-y-4">
+      <ul class=" font-poppins grid md:grid-cols-6 grid-cols-5 text-2xl w-full h-full text-violet-gray gap-x-4 gap-y-24">
         <li class="list-none w-4/5 text-center flex flex-col flex-wrap items-center">
 
           <i class="devicon-javascript-plain"></i>
@@ -239,19 +262,18 @@
 
   </section>
   <!-- project section -->
-
-  <section id="project" class=" flex justify-center text-plum dark:text-plum-gray mb-32 min-h-full">
+  <section id="project" class=" flex justify-center text-plum dark:text-violet-gray mb-32 min-h-full">
     <div
       class="container mx-auto px-6 flex flex-col space-y-10 md:space-y-0 justify-center md:space-x-10 lg:space-x-20 items-center">
       <h2
         class="font-display text-xl text-plum dark:text-snow font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl">
         Some Things I've Worked On 👩🏾‍💻</h2>
 
-      <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="container font-poppins mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- project card #1 -->
         <a href="https://github.com/hibaqw/Leftovers-App">
           <div
-            class=" group col-span-1 flex flex-col dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
+            class=" group col-span-1 flex flex-col min-h-full dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
             <div class="flex flex-wrap justify-between group-hover:text-violet group-hover:dark:text-orchid">
               <h2 class="mb-2 font-bold text-2xl">
                 Leftovers App
@@ -273,7 +295,7 @@
         <!-- project card #2 -->
         <a href="https://github.com/hibaqw/food-ordering-Group5">
           <div
-            class=" group col-span-1 flex flex-col dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
+            class=" group col-span-1 flex flex-col min-h-full dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
             <div class="flex flex-wrap justify-between group-hover:text-violet group-hover:dark:text-orchid">
               <h2 class="mb-2 font-bold text-2xl">
                 Food Ordering App
@@ -282,7 +304,7 @@
             </div>
             <p class="text-md text-justify">
               Food ordering web application that emulates the online food ordering experience, similar to services
-              offered by applications
+              offered by applications.
             </p>
             <div class="flex flex-wrap mt-auto pt-3 text-xs group-hover:text-violet group-hover:dark:text-orchid">
               <p class="mr-2 mb-2">HTML5/CSS</p>
@@ -293,7 +315,7 @@
         <!-- project card #3 -->
         <a href="https://github.com/hibaqw/scheduler">
           <div
-            class=" group col-span-1 flex flex-col dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
+            class=" group col-span-1 flex flex-col min-h-full dark:bg-indigo-gray bg-creamy-beige p-4 rounded-sm hover:scale-110 shadow-md">
             <div class="flex flex-wrap justify-between group-hover:text-violet group-hover:dark:text-orchid">
               <h2 class="mb-2 font-bold text-2xl">
                 Scheduler
@@ -301,7 +323,7 @@
               <i class="fa-brands fa-github"></i>
             </div>
             <p class="text-md text-justify">
-              React-based project designed to book meetings for students to connect with mentors in real-time
+              React-based project designed to book meetings for students to connect with mentors in real-time.
             </p>
             <div class="flex flex-wrap mt-auto pt-3 text-xs group-hover:text-violet group-hover:dark:text-orchid">
               <p class="mr-2 mb-2">React</p>
@@ -316,41 +338,47 @@
   <!-- contacts section -->
   <section id="contact" class="bg-creamy-beige dark:bg-indigo-gray text-plum dark:text-snow flex items-center h-full">
     <!-- header -->
-    <div class="container mx-auto flex flex-col items-center">
-  
-        <h2 class="font-display text-lg font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl mb-5">
-          Let's Connect 🙇🏾‍♀️</h2>
-        <p class="text-center w-1/2 leading-loose text-xs md:text-sm">
-          Thank you for reaching this far! I hope you found your stay here well!
-          If you have any questions, suggestions, or would like to discuss web development, please feel free to reach
-          out.
-          I look forward to hearing from you and exploring potential collaborations. Let's create something amazing
-          together!
-        </p>
+    <div class="container font-poppins mx-auto flex flex-col items-center">
 
-        <div class=" mt-10 text-xl md:text-2xl lg:text-3xl flex">
-          <div class="mx-5">
-            <a href="https://www.linkedin.com/in/hibaq-warsame/">
-              <i class=" hover:text-violet hover:dark:text-orchid fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-          <div class="mx-5">
-            <a href="https://github.com/hibaqw">
-              <i class=" hover:text-violet hover:dark:text-orchid fa-brands fa-github"></i>
-            </a>
-          </div>
+      <h2 class="font-display text-lg font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl mb-5">
+        Let's Connect 🙇🏾‍♀️</h2>
+      <p class="text-center w-1/2 leading-loose text-xs md:text-sm">
+        Thank you for reaching this far! I hope you found your stay here well!
+        If you have any questions, suggestions, or would like to discuss web development, please feel free to reach
+        out.
+        I look forward to hearing from you and exploring potential collaborations. Let's create something amazing
+        together!
+      </p>
+
+      <div class=" mt-10 text-xl md:text-2xl lg:text-3xl flex">
+        <div class="mx-5">
+          <a href="https://www.linkedin.com/in/hibaq-warsame/">
+            <i class=" hover:text-violet hover:dark:text-orchid fa-brands fa-linkedin"></i>
+          </a>
         </div>
+        <div class="mx-5">
+          <a href="https://github.com/hibaqw">
+            <i class=" hover:text-violet hover:dark:text-orchid fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
+  <!--Footer -->
   <footer
-    class=" w-full relative bg-gray-beige text-snow dark:bg-plum-gray dark:text-snow m-auto p-4 text-center text-sm">
-    <p>Designed and developed with love ❤️ Hibaq Warsame</p>
+    class=" w-full relative bg-gray-beige dark:text-snow text-plum dark:bg-plum-gray m-auto p-4 text-center text-sm">
+    <div class=" font-poppins flex justify-center md:flex-row flex-col">
+      <p>Designed and developed with love ❤️ Hibaq Warsame</p>
+      <p class="px-1">•</p>
+      <p>Art created by <a class="hover:text-violet dark:hover:text-orchid"
+          href="https://www.instagram.com/muna_luna.art/"> Deqa Omer </a></p>
+    </div>
   </footer>
   <script src="./src/js/app.js"></script>
-   <!--ion icons-->
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-   
+  <!--ion icons-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
